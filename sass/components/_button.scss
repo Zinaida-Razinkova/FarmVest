@@ -1,0 +1,63 @@
+.button {
+    display: inline-block;
+    min-width: 142px;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: inherit;
+    line-height: 1.2;
+    color: inherit;
+    text-align: center;
+    padding: 21px 25px;
+    background-color: $accent-color;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    @media screen and (max-width: 991.98px) {
+        min-width: 100px;
+        padding: 10px 14px;
+    }
+
+    @media screen and (max-width: 475.98px) {
+        width: 100%;
+    }
+
+}
+
+.button_accent {
+
+    &:hover,
+    &:focus {
+        background-color: #198519;
+    }
+}
+
+.button_border {
+    background-color: transparent;
+    border: 1px solid $secondary-color;
+    padding: 20px 25px;
+
+    &:not(:last-child) {
+        margin-right: 16px;
+
+        @media screen and (max-width: 471px) {
+            margin-right: 0;
+            font-size: 16px;
+        }
+    }
+
+    &:hover {
+        border: 1px solid $accent-color;
+        color: $accent-color;
+    }
+
+    @media screen and (max-width: 991.98px) {
+        padding: 9px 14px;
+    }
+}
+
+.button_accent-header {
+    @media screen and (max-width: 475.98px) {
+        display: none;
+    }
+}

@@ -1,0 +1,39 @@
+.form {
+    display: flex;
+    max-width: 533px;
+    background: #fff;
+    border-radius: 10px;
+
+    padding: 6px;
+    gap: 10px;
+
+    @media screen and (max-width: 430px) {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.form__input {
+    flex: 1 1 auto;
+    height: 64px;
+    padding: 20px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #263238;
+
+    @media screen and (max-width: 430px) {
+        text-align: center;
+        padding: 10px;
+    }
+
+}
+
+.form__input::placeholder {
+    color: #263238;
+    transition: opacity 0.3s ease 0s;
+}
+
+.form__input:focus::placeholder {
+    opacity: 0;
+}

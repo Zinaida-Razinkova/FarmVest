@@ -1,0 +1,124 @@
+.works__container {
+    display: grid;
+
+    @media screen and (min-width: 992px) {
+        grid-template-columns: 1fr 53%;
+    }
+}
+
+.works__content {
+    @media screen and (min-width: 992px) and (max-width: 1439.98px) {
+        padding-right: 25px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-left: 100px;
+        margin-right: 95px;
+    }
+}
+
+.works__title {
+    font-family: inherit;
+    text-align: left;
+
+    @media screen and (max-width: 991.98px) {
+        text-align: center;
+    }
+}
+
+.works__text {
+    @media screen and (max-width: 991.98px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 992px) {
+        max-width: 450px;
+    }
+}
+
+.steps-works {
+    max-width: 420px;
+
+    &:not(:last-child) {
+        margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 991.98px) {
+        margin: 0 auto 50px auto;
+    }
+
+}
+
+.steps-works__items {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 475.98px) {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    &:hover,
+    &:focus {
+        .steps-works__icon {
+            background-color: rgba(255, 255, 255, 0.05);
+            ;
+        }
+
+        .icon__works {
+            scale: 1.2;
+            transition: scale 0.8s ease 0s;
+        }
+    }
+}
+
+.steps-works__icon {
+    border-radius: 50%;
+    background-color: rgba(0, 128, 0, 0.1);
+    flex: 0 0 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    margin-right: 32px;
+
+    @media screen and (max-width: 475.98px) {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+.icon__works {
+    width: 56px;
+    stroke: $accent-color;
+    fill: $accent-color;
+}
+
+.steps-works__title {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.1;
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+.works__img {
+    align-self: start;
+}
+
+.works__img {
+
+    &:hover,
+    &:focus {
+
+
+        img {
+            scale: 1.1;
+            transition: scale 0.8s ease 0s;
+        }
+    }
+}

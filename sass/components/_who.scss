@@ -1,0 +1,108 @@
+.why__container {
+
+    @media screen and (min-width: 992px) {
+        display: flex;
+    }
+}
+
+.who__content {
+    flex: 0 0 38%;
+
+    @media screen and (max-width: 991.98px) {
+        margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1439.98px) {
+        margin-right: 20px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+.who__title {
+    text-align: left;
+
+    @media screen and (max-width: 991.98px) {
+        text-align: center;
+    }
+}
+
+.who__text {
+    @media screen and (max-width: 991.98px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 992px) {
+        max-width: 450px;
+    }
+}
+
+.items-who__list {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.1;
+
+    &:not(:last-child) {
+        margin-bottom: 48px;
+    }
+
+    span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 36px;
+        margin-right: 50px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.05);
+
+        width: 64px;
+        height: 64px;
+    }
+
+    &:hover,
+    &:focus {
+        span {
+            color: $accent-color;
+            background-color: rgba(0, 128, 0, 0.1);
+            ;
+            scale: 1.1;
+            transition: scale 0.8s ease 0s;
+        }
+    }
+
+    @media screen and (max-width: 475.98px) {
+        font-size: 18px;
+
+        &:not(:last-child) {
+            margin-bottom: 28px;
+        }
+
+        span {
+            font-size: 26px;
+            margin-right: 10px;
+            width: 54px;
+            height: 54px;
+        }
+    }
+}
+
+.who__img {
+    img {
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &:hover,
+    &:focus {
+        img {
+            scale: 1.1;
+            transition: scale 0.8s ease 0s;
+        }
+    }
+}

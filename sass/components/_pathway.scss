@@ -1,0 +1,136 @@
+.pathway__container {
+    display: flex;
+
+    @media screen and (max-width: 991.98px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.pathway__img {
+    flex: 0 0 43%;
+    padding: 99px 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1440px) {
+        margin-left: 100px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        padding: 79px 30px;
+    }
+
+    @media screen and (max-width: 475.98px) {
+        padding: 59px 20px;
+    }
+
+    .img-block__circle_1::before {
+        transform: translate(calc(-50% + 18px), -20%);
+    }
+
+    .img-block__circle_2::before {
+        transform: translate(calc(-50% + 20px), -6%);
+    }
+
+    &:hover,
+    &:focus {
+        img {
+            scale: 1.1;
+            transition: scale 0.8s ease 0s;
+        }
+    }
+}
+
+.pathway__content {
+
+    @media screen and (max-width: 991.98px) {
+        margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1439.98px) {
+        padding-left: 25px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-left: 110px;
+        margin-right: 110px;
+    }
+}
+
+.pathway__title {
+    text-align: left;
+
+    @media screen and (max-width: 991.98px) {
+        text-align: center;
+    }
+}
+
+.pathway__text {
+
+    @media screen and (max-width: 991.98px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 992px) {
+        max-width: 450px;
+    }
+}
+
+// Spollers
+.pathway__spollers {
+    display: grid;
+    gap: 24px;
+}
+
+.spollers-pathway__item {
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.spollers-pathway__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    font-family: inherit;
+    color: inherit;
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 24px 30px;
+    gap: 10px;
+
+    &::after {
+        content: "";
+        background: url("../images/icons/arrow.svg") center no-repeat;
+        flex: 0 0 24px;
+        height: 24px;
+        transition: all 0.3s ease 0s;
+    }
+
+    &._spoller-active {
+
+        &::after {
+            transform: rotate(-180deg);
+        }
+    }
+
+    @media screen and (max-width: 767.98px) {
+        font-size: 18px;
+        line-height: 1.4;
+        padding: 14px 8px;
+    }
+
+    @media screen and (max-width: 475.98px) {
+        font-size: 16px;
+    }
+}
+
+.spollers-pathway__content {
+    padding: 10px 30px 24px 30px;
+
+    @media screen and (max-width: 767.98px) {
+        padding: 10px 15px;
+    }
+}

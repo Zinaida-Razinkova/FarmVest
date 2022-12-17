@@ -1,0 +1,218 @@
+.invest {
+    padding-bottom: 100px;
+
+    @media screen and (max-width: 767.98px) {
+        padding-bottom: 50px;
+    }
+}
+
+.invest__container {
+    position: relative;
+    background-color: $primary-color;
+}
+
+.invest__content {
+    position: relative;
+    z-index: 20;
+    padding-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media screen and (max-width: 991.98px) {
+        padding-top: 150px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        padding-top: 100px;
+    }
+
+    @media screen and (max-width: 475.98px) {
+        padding-top: 80px;
+    }
+}
+
+.invest__title {
+    max-width: 750px;
+}
+
+
+.invest__text {
+    max-width: 570px;
+}
+
+.invest__button {
+    font-family: inherit;
+}
+
+.icons-invest__item_1,
+.icons-invest__item_2,
+.icons-invest__item_3,
+.icons-invest__item_4,
+.icons-invest__item_5,
+.icons-invest__item_6,
+.icons-invest__item_7,
+.icons-invest__item_8,
+.icons-invest__item_9 {
+    position: absolute;
+    z-index: 40;
+}
+
+.icons-invest__item_1 {
+    width: 30px;
+    height: 30px;
+    top: 88%;
+    left: 1.5%;
+    background: url("../images/invest/01.svg") top / cover no-repeat;
+
+    @media screen and (max-width: 767.98px) {
+        top: 18%;
+        left: 1.5%;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.icons-invest__item_2 {
+    width: 40px;
+    height: 40px;
+    top: 49%;
+    left: 15%;
+    background: url("../images/invest/02.svg") top / cover no-repeat;
+
+    @media screen and (max-width: 767.98px) {
+        top: 37%;
+        left: 6%;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.icons-invest__item_3 {
+    width: 20px;
+    height: 20px;
+    top: 98%;
+    left: 29%;
+    background: url("../images/invest/03.svg") top / cover no-repeat;
+
+    @media screen and (max-width: 767.98px) {
+        top: 75%;
+        left: 29%;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.icons-invest__item_4 {
+    width: 48px;
+    height: 48px;
+    top: 30%;
+    left: 79%;
+    background: url("../images/invest/04.svg") top / cover no-repeat;
+
+    @media screen and (max-width: 767.98px) {
+        top: 40%;
+        left: 90%;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.icons-invest__item_5 {
+    width: 16px;
+    height: 16px;
+    top: 54%;
+    right: 25%;
+    background: url("../images/invest/05.svg") top / cover no-repeat;
+
+    @media screen and (max-width: 767.98px) {
+        top: 80%;
+        right: 10%;
+        width: 8px;
+        height: 8px;
+    }
+}
+
+.icons-invest__item_6 {
+    width: 40px;
+    height: 40px;
+    top: 101%;
+    right: 24%;
+    background: url("../images/invest/06.svg") top / cover no-repeat;
+
+    @media screen and (max-width: 767.98px) {
+        top: 70%;
+        right: 17%;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.icons-invest__item_7 {
+    width: 32px;
+    height: 32px;
+    top: 67%;
+    right: 1%;
+    background: url("../images/invest/07.svg") top / cover no-repeat;
+
+    @media screen and (max-width: 767.98px) {
+        top: 47%;
+        right: 1%;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.icons-invest__item_8,
+.icons-invest__item_9 {
+    width: 585px;
+    height: 585px;
+    z-index: 60;
+
+    @media screen and (max-width: 991.98px) {
+        width: 485px;
+        height: 485px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        width: 385px;
+        height: 385px;
+    }
+
+    @media screen and (max-width: 475.98px) {
+        display: none;
+    }
+}
+
+.icons-invest__item_8 {
+    left: -116px;
+    top: -261px;
+    background: url("../images/invest/08.svg") top / cover no-repeat;
+
+    @media screen and (max-width: 872.98px) {
+        left: -150px;
+        top: -261px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        left: -120px;
+        top: -261px;
+    }
+}
+
+.icons-invest__item_9 {
+    left: -171px;
+    top: -206px;
+    background: url("../images/invest/09.svg") top / cover no-repeat;
+    @media screen and (max-width: 872.98px) {
+        left: -220px;
+        top: -206px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        left: -170px;
+        top: -206px;
+    }
+}
